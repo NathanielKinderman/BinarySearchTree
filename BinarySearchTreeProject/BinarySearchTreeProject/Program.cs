@@ -6,18 +6,21 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTreeProject
 {
-    class Node
+    class Program
     {
-        int data;
-        Node leftChild;
-        Node rightChild;
-        public Node(int data)
-        {
-            this.data = data;
-            this.leftChild = null;
-            this.rightChild = null;
-        }
-        
+      static void Main(string[] args)
+      {
+            BinarySearchTree bts = new BinarySearchTree();
+            bts.InsertAtEnd(100);
+            bts.InsertAtEnd(69);
+            bts.InsertAtEnd(150);
+            //bts.InsertAtEnd(50);
+            //bts.InsertAtEnd(109);
+            //bts.InsertAtEnd(90);
+            bts.Searching(10);
+            bts.Searching(69);
+
+      }
         
     }
 }
